@@ -1,0 +1,83 @@
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    font-size: 25px;
+
+}
+
+.name {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 48px;
+    color: white;
+    text-shadow: 0.4px 0.4px 0.4px black;
+
+
+}
+
+#round{
+    position: absolute;
+	height: 230px;
+	width: 230px;
+	border-radius: 120px;
+	border: solid 7px #434446;
+}
+
+.round {
+    border-radius: 40%;
+    overflow: hidden;
+    width: 191px;
+    height: 468px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    border: 9px solid white;
+        }
+
+.round img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+            }
+
+.background-image {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    position: fixed;
+    height: 102%;
+    left: -9;
+    bottom: -9;
+    right: -9;
+}
+
+.content {
+    top: 3%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    padding: 5px 5px;
+}
+
+.ghost-button-thick-border {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+    color 0.2s ease-out;
+}
+    .ghost-button-thick-border:hover,
+    .ghost-button-thick-border:active {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in,
+    color 0.3s ease-in;
+}

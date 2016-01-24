@@ -1,0 +1,49 @@
+
+<!doctype html>
+<head>
+    <title>This Is Random!</title>
+<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" media="all" href="webm.css">
+</head>
+<body>
+
+<video id="video" src="video1.mp4" autoplay preload="auto">
+<source id="webm" src="video1.webm" type="video/webm" />
+<source id="ogv" src="video1.ogv" type="video/ogv" />
+<script>
+var videoPlayer= document.getElementById('video');
+
+function playIt(){
+videoPlayer.play();
+
+var videos = [
+"video1",
+"video2",
+"video3",
+"video4",
+"video5",
+"video9",
+"video10",
+"video11",
+"video13",
+"video14",
+"video15",
+"video16",
+"video17",
+"video18",
+"video19",
+"video20",
+"video21",
+
+], videos = videos[Math.floor(Math.random() * videos.length)];
+
+videoPlayer.src = "/webm/" + videos + ".webm";
+}
+
+videoPlayer.addEventListener('ended', playIt, false);
+
+playIt();
+
+</script>
+</body>
+</html>
