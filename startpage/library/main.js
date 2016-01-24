@@ -242,7 +242,7 @@ $(document).ready(function(){
 
 	$('#each').click(
 		function() {
-			if(confirm('Are you sure? It will open all links, and the work may render your browser insane.')) {
+			if(confirm('Bratish, ia otkroiy vse tvoi ssilki, uveren?')) {
 				$('#container a').each(
 					function() {
 						var url = $(this).attr('href');
@@ -259,7 +259,7 @@ $(document).ready(function(){
 
 	$('#shown').click(
 		function() {
-			if(confirm('Are you sure? It will open currently visible sites.')) {
+			if(confirm('Vse ssilki na stranize otkroiy tebe, Gospodin!')) {
 				$('#container div:visible a').each(
 					function() {
 						var url = $(this).attr('href');

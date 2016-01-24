@@ -19,7 +19,7 @@ body{
 	height: 230px;
 	width: 230px;
 	border-radius: 120px;
-	border: solid 7px #434446;
+	border: solid 3px #434446;
 }
 
 .round {
@@ -42,7 +42,7 @@ body{
             }
 
 .background-image {
-    background-image: url('bg.jpg');
+    background-image: url('wallpaper.png');
     background-size: cover;
     display: block;
     filter: blur(5px);
@@ -50,7 +50,7 @@ body{
     position: fixed;
     height: 102%;
     left: -9;
-    bottom: -9;
+    bottom: 0;
     right: -9;
 }
 
@@ -59,13 +59,13 @@ body{
     left: 0;
     position: absolute;
     right: 0;
-    padding: 5px 5px;
+    padding: 2px 2px;
 }
 
 .ghost-button-thick-border {
     display: inline-block;
     width: 200px;
-    padding: 10px;
+    padding: 3px;
     color: #fff;
     border: 2px solid #fff;
     text-align: center;
