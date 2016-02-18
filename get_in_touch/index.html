@@ -1,50 +1,79 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Get In Touch</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="zh-cn">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Vadim Romaniuk</h1>
-						<p>Developer &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Student</p>
-						<nav>
-							<ul>
-								<li><a href="https://www.facebook.com/rick.mcfly.3" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/RomaniukVadim" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-								<li><a href="mailto:lavadimka1997@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+<head>
+	
+	<meta charset="UTF-8" />
+	<title>Romaniuk Vadim (Meryborn) @ WEB / UI / LINUX</title>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Copiright <a href="#">RomaniukVadim</a></span>
-					</footer>
+	<script src="http://res.cheny.org/jquery/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-			</div>
+	<meta name="author" content="dimpurr" />
+	<meta name="description" content=" (nails) WEB / UI / ACMN a journey of a thousand miles begins with a single step - is not cute boys. Lolicon one, hard to force three days of the party. Direction and the front-end interactive skills HTML5, PHP, Python. I want to be chicory" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+<div id="page" itemscope itemtype="http://data-vocabulary.org/Person">
+
+	<header>
+		<img src="head.jpg" id="head" alt="Meryborn" title="Meryborn" itemprop="photo" />
+	
+		<h1 id="name"><span itemprop="name">Romaniuk Vadim</span>&nbsp;<span itemprop="nickname">(Meryborn)</span></h1>
+		<h2 id="info" itemprop="organization">WEB / UI / LINUX</h2>
+	
+		<section id="tag">
+			<p itemprop="title">I'm Junior Java Developer.Have no work experience. Looking for Internship</p>
+			<p>A thousand miles begins with a single step.</p>
+		</section>
+	</header>
+	
+	<nav id="btndiv">
+		<img src="about.png" class="btn" id="about" alt="about" title="about" />
+		<img src="link.png" class="btn" id="link" alt="link" title="link" />
+	</nav>
+	
+	<section id="textdiv"></section>
+	
+	<section id="hidetext">
+	
+		<div id="aboutdiv" itemprop="description">
+			<p>一The point is not cute<span itemprop="gender">boy</span>. Lolicon one.</p>
+			<p>Love Linux, now work on Arch , before on Debian.</p>
+			<p>All my free time  I'm learning new technologies and read IT news. </p>
+			<p>Know Bash, Web Languages, Java, C, Pythone, Ruby.</p>
+			<p> Interested in Ethical Hacking. </p>
+	
 		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+		
+		<div id="linkdiv">
+		<ul>
+			<li itemprop="knows"><a href="https://plus.google.com/u/0/110159518776652705678/posts">
+					<img src="icon/gplus.png" alt="Google+" title="Google+" />
+			</a></li>
+			<li itemprop="follows"><a href="https://www.linkedin.com/in/vadim-romaniuk-576318105">
+					<img src="icon/linkedin.png" alt="linkedin" title="linkedin" />
+			</a></li>
+			<li itemprop="follows"><a href="https://github.com/RomaniukVadim">
+					<img src="icon/github.png" alt="Github" title="Github" />
+			</a></li>
+			<li itemprop="follows"><a href="http://vk.com/meryborn">
+					<img src="icon/vk.png" alt="VK" title="VK" />
+			</a></li>
+			<li itemprop="follows"><a href="https://www.youtube.com/channel/UCp53HAljO5lTj-Rjv6H31xg">
+					<img src="icon/youtube.png" alt="YTube" title="YTube" />
+			</a></li>
+			<li itemprop="email"><a href="mailto:lavadimka1997@gmail.com">
+					<img src="icon/gmail.png" alt="Mail" title="Mail" />
+			</a></li>
+		</ul>
+		<div id="imgh"></div>
+	</div>	
+	</section>
+</div>
+</body>
 </html>
