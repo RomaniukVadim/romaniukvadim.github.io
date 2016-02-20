@@ -16,6 +16,8 @@ a{
 	text-decoration:none;
 	cursor: pointer;
 	color: #3689C8;
+   /* font-family: "Vollkorn", serif ;*/ 
+	font-size: 16px; 
 }
 a:hover, a:active{
 	text-decoration:none;
