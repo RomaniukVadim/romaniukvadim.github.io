@@ -1,26 +1,71 @@
-html, body {
-	background-color: #E2DAF0;
+html, body, {
+	background-color: #EEE;
 }
-
 h3{
-	color: #646C88;
+	color: #FFFFFF;
 }
 p, h1{
-	color: #76727D;
+	color: #ABB7B7;
 }
- h3, p, a{
+.header, h3, p, a{
 	text-align: center;
 }
 
 a{
 	text-decoration:none;
 	cursor: pointer;
-	color: #3689C8;
-   /* font-family: "Vollkorn", serif ;*/ 
-	font-size: 16px; 
+	color: #fff;
 }
 a:hover, a:active{
 	text-decoration:none;
 	cursor: pointer;
-	color: #3689C8 ;
+	color: #3498DB ;
 }
+
+
+/* Спиздил у Шина */
+.is_overlay {
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+#trailer {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	}
+@media (min-aspect-ratio: 16/9) {
+#trailer > video {
+		height: 300%;
+		top: -100%;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+#trailer > video {
+	width: 300%;
+	left: -100%;
+	}
+}
+@supports (object-fit: cover) {
+#trailer > video {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.bg{
+  background-color: #000; /* Чёрный фон */
+  height: 100%; /* Высота максимальна */
+  left: 0; /* Нулевой отступ слева */
+  opacity: 0.65; /* Степень прозрачности */
+  position: fixed; /* Фиксированное положение */
+  top: 0; /* Нулевой отступ сверху */
+  width: 100%; /* Ширина максимальна */
+  z-index: -1;
+	}
