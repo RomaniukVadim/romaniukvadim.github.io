@@ -18,15 +18,15 @@ body{
     position: absolute;
 	height: 230px;
 	width: 230px;
-	border-radius: 120px;
-	border: solid 3px #434446;
+	border-radius: 130px;
+	border: solid 2px #434446;
 }
 
 .round {
     border-radius: 40%;
     overflow: hidden;
     width: 210px;
-    height: 487px;
+    height: 480px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
