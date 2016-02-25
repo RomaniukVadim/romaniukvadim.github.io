@@ -42,7 +42,7 @@ body{
             }
 
 .background-image {
-    background-image: url('2.jpg');
+    background-image: url('2.jpg');   
     background-size: cover;
     display: block;
     filter: blur(5px);
