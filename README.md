@@ -1,7 +1,7 @@
 # RomaniukVadim.github.io
 
 
-![1](https://raw.githubusercontent.com/meryborn/romaniukvadim.github.io/master/media/look.png)
+![1](https://i.imgur.com/M2ATB1O.png)
 
 - (Startpage)Page with many helpful links
 - (Study )Arhive of books for university
