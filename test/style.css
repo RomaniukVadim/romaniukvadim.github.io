@@ -1,0 +1,108 @@
+/*{
+	border: 1px solid black;
+}*/
+.background-img{
+	background-image: url("img/fon.jpg");   
+    background-size: cover;
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+.cl{
+	width: auto;
+	
+}
+#main{
+	border-radius: 10px;
+	height: 100em;
+	background-color: rgba(248,249,222,0.4);
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+div img{
+	display: block;
+    position: absolute;
+    left: 5%;
+    top: 2em;
+    width:45%;
+
+}
+.text{
+    position: absolute;
+    right: 5%;
+    top: 2em;
+	width: 45%;
+	height: 25%;
+	border: 0px solid black;
+}
+
+#title1{
+	font-size: 3em;
+	text-align: center;
+	line-height: 0.7;
+	font-family:Oswald, Verdana;
+}
+span{
+	font-size: 0.7em;
+}
+#sh-info{
+	text-align: center;
+	font-size: 1.2em;
+	font-family:Oswald, Verdana;
+	font-weight: 400; 
+}
+.mbody{
+	position: absolute;
+    right: 5%;
+    top: 27em;
+	width: 90%;
+	height: 70%;
+	border: 0px solid black;
+}
+#title2{
+	font-size: 3em;
+	text-align: center;
+	font-family:Oswald, Verdana;
+}
+
+.btn-1 {
+	border: 0px !important ;
+	color: black!important ;
+	display: inline-block;
+  	padding: 0em;
+ 	background: #FFBA00;
+  	transition: 1s;
+  	
+  	height: 8em;
+  	width: 50%;
+  	border-radius: 10px !important;
+  	font-family: Oswald, Verdana;
+  	font-size: 1.2em!important;
+  	text-decoration: none;
+}
+.btn-1a{
+	border: 0px dashed black !important;
+	text-decoration: none;
+}
+.btn-1a:hover,
+.btn-1a:active, .btn-1a:visited {
+	color: white!important;
+	background: #383530!important;
+	border: 0px dashed black !important;
+
+}
+.btn-1:focus{
+	border: 0px dashed black !important;
+}
+/*
+.navbar .container { 
+	background:#292813;  
+	height: 40px; 
+	border-radius: 10px;
+	margin-top: -10px;
+}
+.navbar .container .btn {
+	height: 20px; }*/
