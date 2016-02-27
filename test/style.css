@@ -22,12 +22,20 @@
 	margin-bottom: 40px;
 }
 
-div img{
+#img1{
 	display: block;
     position: absolute;
     left: 5%;
     top: 2em;
     width:45%;
+
+}
+#img2{
+	display: block;
+    position: absolute;
+    width:80%;
+    left: 10%;
+
 
 }
 .text{
@@ -57,52 +65,67 @@ span{
 .mbody{
 	position: absolute;
     right: 5%;
-    top: 27em;
 	width: 90%;
 	height: 70%;
 	border: 0px solid black;
 }
+.mb1{
+	top: 30em;
+	border-top: 1px solid #FFBA00 ;
+}
+.mb2{
+	top: 35em;
+}
+.mb3{
+	top: 45em;
+}
+.mb4{
+	top: 55em;
+}
+.mb5{
+	top: 65em;
+}
+.mb6{
+	top: 75em;
+	border-top: 1px solid #FFBA00 ;
+}
+.text1{
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-size: 1.2em;
+	text-align: center;
+	/*line-height: 0.7;*/
+	font-family:Oswald, Verdana;
+	font-weight: 300; 
+}
+
+
 #title2{
-	font-size: 3em;
+	font-size: 2em;
 	text-align: center;
 	font-family:Oswald, Verdana;
 }
 
-.btn-1 {
+.btn {
 	border: 0px !important ;
 	color: black!important ;
-	display: inline-block;
-  	padding: 0em;
  	background: #FFBA00;
   	transition: 1s;
-  	
   	height: 8em;
   	width: 50%;
   	border-radius: 10px !important;
   	font-family: Oswald, Verdana;
   	font-size: 1.2em!important;
-  	text-decoration: none;
-}
-.btn-1a{
-	border: 0px dashed black !important;
-	text-decoration: none;
-}
-.btn-1a:hover,
-.btn-1a:active, .btn-1a:visited {
-	color: white!important;
-	background: #383530!important;
-	border: 0px dashed black !important;
+  	position: right;
 
 }
-.btn-1:focus{
+.btn-1a:hover,
+.btn-1a:active{
+	color: white!important;
+	background: #383530!important;
+}
+.btn:focus{
 	border: 0px dashed black !important;
+	outline: none !important;
 }
-/*
-.navbar .container { 
-	background:#292813;  
-	height: 40px; 
-	border-radius: 10px;
-	margin-top: -10px;
-}
-.navbar .container .btn {
-	height: 20px; }*/
