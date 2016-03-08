@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="linkApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#links</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src=js/angular.min.js></script>
+    <script>
+        // model
+        var model = {
+            links: [
+                {name : "Bootstrap", address: "http://getbootstrap.com/"},
+                {name: "Angular_js", address: "https://angularjs.org/"},
+                {name: "jQuery", address: "http://jquery.com/"}
+            ]
+        };
+        // module
+        var linkApp = angular.module("linkApp", []);
+        // controller
+        linkApp.controller("linkCtrl", function($scope){
+            $scope.data = model;
+            //  add button handler
+            $scope.addNewLinks = function (){
+                $scope.data.links.push({
+                    name: $scope.linksName,
+                    address: $scope.linksAddress
+                });
+                $scope.linksName = "";
+                $scope.linksAddress= "";
+            };
+            // remove button handler
+            $scope.removeLinks = function (index){
+                $scope.data.links.splice(index, 1);
+            };
+        });
+    </script>
+</head>
+<body ng-controller="linkCtrl">
+<div class="container">
+    <h1>#myLinks</h1>
+    <div class="panel">
+        <div class="input-group">
+            <span class="input-group-addon">add</span>
+            <input class="form-control" placeholder="name" ng-model="linksName" />
+            <input class="form-control" placeholder="address" ng-model="linksAddress" />
+            <span class="input-group-addon">
+                <button class="btn btn-default btn-sm" ng-click="addNewLinks()">push</button>
+            </span>
+        </div>
+            <p><span class="span_sum">sum links :</span> <code>&lt;{{data.links.length}}&gt;</code></p>
+        </div>
+    <table class="table table-condensed table-hover table-responsive">
+        <thead>
+        <tr>
+            <th>links :</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="links in data.links">
+                <td>
+                    <a href="{{links.address}}">{{links.name}}</a>
+                </td>
+                <td>
+                    <button class="close" aria-hidden="true" ng-click="removeLinks($index)">&times;</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<style>
+    a,p{font-size:18px;}
+    th{font-size:20px;}
+    a:hover{text-decoration: none;}
+    .span_sum{color: #999;font-size: 16px;}
+    small a{text-decoration: none;color: #999}
+</style>
+</body>
+</html>
