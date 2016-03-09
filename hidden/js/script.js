@@ -1,6 +1,6 @@
 $(document).ready(function(){
 			$('.tab-container').easytabs({
-			defaultTab: 'li:nth-child(2)',
+			defaultTab: 'li:nth-child(1)',
 			transitionIn: 'slideDown',
 			transitionOut: 'slideUp'
 			});
@@ -14,7 +14,17 @@ $(document).ready(function(){
 				        }
 				    }
 			    });
-			$('#arch').fancybox({
+			$('.sites').fancybox({
+			        padding : 0,
+			          helpers : {
+				        overlay : {
+				            css : {
+				                'background' : 'rgba(35, 40, 48, 1)'
+				            }
+				        }
+				    }
+			    });
+				$('#sites').fancybox({
 			        padding : 0,
 			          helpers : {
 				        overlay : {
@@ -34,7 +44,7 @@ $(document).ready(function(){
 			  auto: true
 			});
 });
-
+$('selection p, selection button').addClass('text-center');
 function toggleFullScreen() {
   if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
    (!document.mozFullScreen && !document.webkitIsFullScreen)) {
