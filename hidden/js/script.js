@@ -24,7 +24,7 @@ $(document).ready(function(){
 				        }
 				    }
 			    });
-				$('#sites').fancybox({
+				$('#arch').fancybox({
 			        padding : 0,
 			          helpers : {
 				        overlay : {
