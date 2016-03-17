@@ -81,3 +81,20 @@ body{
     transition: background-color 0.3s ease-in,
     color 0.3s ease-in;
 }
+
+#start-anim {
+    margin-right:30px;
+}
+
+#anim_text {
+    width:90%;
+    margin:1px auto;
+    overflow:visible;
+    text-align:center;
+}
+
+#anim_text span {
+    position: relative;
+    display:inline-block;
+    -webkit-font-smoothing:antialiased;
+}
