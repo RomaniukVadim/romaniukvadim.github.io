@@ -1,0 +1,20 @@
+body{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #eee;
+}
+
+input{
+	width: 70%;
+	margin-bottom: 20px;
+}
+
+.tdItem{
+	padding: 10px;
+	cursor: default;
+	border-radius: 7px;
+}
+
+.tdItem:hover{
+	background-color: lightblue;
+}
