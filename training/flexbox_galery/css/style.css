@@ -1,0 +1,27 @@
+.container {
+	width: 80%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.container ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container ul li {
+	flex-grow: 1;
+	flex-basis: 150px;
+	list-style: none;
+	font: 10px/1.5 Verdana, Helvetica, Sens-serif;
+	width: 16%;
+	margin: 2% 2% 40px 2%
+}
+
+.container ul li a{
+ color: #5d5f5d;
+}
+
+.container ul li a img {
+	width: 100%
+}

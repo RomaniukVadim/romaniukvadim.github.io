@@ -1,0 +1,36 @@
+.container {
+	display: flex;
+
+	height: 500px;
+
+/*	flex-direction: row;
+	flex-direction: row-reverse;
+
+	flex-direction: column;
+	flex-direction: column-reverse;*/
+	
+	justify-content: flex-end;
+	justify-content: center;
+	justify-content: space-between;
+	justify-content: space-around;
+
+	align-items: flex-start;
+	align-items: flex-end;
+	align-items: center;
+
+}
+
+.container div {
+	background: blue;
+	color: #fff;
+
+	padding: 10px; 
+}
+
+.container div:first-child {
+	background: green;
+}
+
+.container div:last-child {
+	background: red;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>Document</title>
+	<style>
+/*	#scroll-p {
+
+		position: fixed;
+		top:45px;
+		left:25px;
+	}*/
+	.selectedImg{
+		background-color: lightgray;
+	}
+	</style>
+</head>
+<body>
+<!-- <button>Push me!</button>
+<p id="resize-p"></p>
+<p id="scroll-p"></p> -->
+<script type="text/javascript">
+	// $(function(){
+	// 		$('button').click(function(e){
+	// 		$(this).text('Pushed!');
+	// 	});
+		// $(window).on("resize scroll", function(e){
+		// 	$('#resize-p').text("Width: " + window.innerWidth + ", Height :" + window.innerHeight);
+		// 	$('#scroll-p').text("Position Y: " + window.scrollY);
+		// });
+
+	// 	$(window).on({
+	// 		resize:function(){
+	// 			$('#resize-p').text("Width: " + window.innerWidth + ", Height :" + window.innerHeight);
+	// 		},
+	// 		scroll:function(){
+	// 			$('#scroll-p').text("Position Y: " + window.scrollY);
+	// 		}
+	// 	});
+	// 	$(window).off("scroll resize");
+	// });
+	$('<img>',{
+		src: 'img/jquery.jpg',
+		alt: 'jQuery course',
+		title: 'jQuery',
+		click: function(e){
+			$(this).toggleClass("selectedImg");
+		}
+		// on:{click:function(e){
+		// 	$(this).toggleClass("selectedImg");
+		// }}
+	})
+		.css({
+			'padding': '10px',
+			'border': '1px solid black'
+		})
+		.appendTo('body');
+</script>
+
+	
+</body>
+</html>
