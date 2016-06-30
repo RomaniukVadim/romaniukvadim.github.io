@@ -205,11 +205,28 @@ input {
   padding: 0;
 }
 
+.contact a{
+display: inline;
+ color: #E84F4F;
+}
+
+.contact a:hover {
+  color: #D23D3D;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
 .resume {
   color: #E84F4F;
 }
+
+.resume a {
+  color: #64C2C0;
+}
 .resume a:hover {
-  color: #D23D3D;
+  color: #39A8A5;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
