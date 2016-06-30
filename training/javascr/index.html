@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>Document</title>
+	<style type="text/css">
+	.someDiv{
+		width: 150px;
+		height: 150px;
+		display: inline-block;
+	}
+
+	#modalDiv{
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		background-color: green;
+		display: none;
+		cursor: pointer;
+	}
+	#div1 { background-color: blue; }
+	#div2 { background-color: green; }
+	#div3 { background-color: yellow; }
+	#div4 { background-color: black; }
+	#div5 { background-color: gray; }
+	</style>
+</head>
+<body>
+
+<div id="div1" class="someDiv"></div>
+<div id="div2" class="someDiv"></div>
+<div id="div3" class="someDiv"></div>
+<div id="div4" class="someDiv"></div>
+<div id="div5" class="someDiv"></div>
+
+<div id="modalDiv"></div>
+
+<script type="text/javascript">
+	var modal = $('#modalDiv'),
+		animTime = 2000,
+		oldDiv = null;
+
+	$('.someDiv').on('click', function(e){
+		var jthis = $(this);
+		if(oldDiv){
+			oldDiv.css('opasity', 1);
+		}
+		modal.css({ 'top':jthis.offset().top,
+					'left':jthis.offset().left,
+					'width':jthis.width(),
+					'height':jthis.height(),
+					'background-color':jthis.css('background-color'),
+					'opasity':1,
+					'display': 'block'
+	});
+		jthis.css('opasity', 0);
+
+		modal
+			.animate({'height': 400},1000);
+			.animate({'top': (window.innerHeight - 400) / 2},1000);
+
+		//modal.css()
+		// modal.css('top', (window.innerHeight - modal.height()) / 2);
+		// modal.css('left', (window.innerWidth - modal.width()) / 2);
+		// modal.css('background-color', $(e.target).css('background-color'));
+		//modal.fadeIn(animTime);
+		oldDiv = jthis;
+	})
+	$('#modalDiv').on('click', function(){
+		modal.hide(animTime);
+	})
+</script>
+
+	
+</body>
+</html>

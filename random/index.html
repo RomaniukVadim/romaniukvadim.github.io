@@ -1,0 +1,52 @@
+
+<!doctype html>
+<head>
+    <title>This Is Random!</title>
+<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" media="all" href="css/webm.css">
+</head>
+<!--HIDEN LINK http://romaniukvadim.github.io/hiden/ HIDEN LINK-->
+<body>
+
+<video id="video" autoplay preload="auto">
+<source id="webm" type="video/webm" />
+<source id="ogv" type="video/ogv" />
+<script>
+var videoPlayer= document.getElementById('video');
+
+function playIt(){
+videoPlayer.play();
+
+var videos = [
+"amv/1.mp4",
+"amv/2.mp4",
+"amv/3.webm",
+"amv/4.mp4",
+"amv/5.mp4",
+"amv/6.mp4",
+"amv/7.mp4",
+"amv/8.mp4",
+"amv/9.mp4",
+"amv/10.mp4",
+"amv/11.mp4",
+"amv/12.webm",
+"amv/13.webm",
+"amv/14.webm",
+"amv/15.webm",
+"amv/16.webm",
+"amv/17.webm",
+"amv/18.webm",
+"amv/19.webm",
+"amv/20.webm",
+], videos = videos[Math.floor(Math.random() * videos.length)];
+
+videoPlayer.src = videos;
+}
+
+videoPlayer.addEventListener('ended', playIt, false);
+
+playIt();
+
+</script>
+</body>
+</html>

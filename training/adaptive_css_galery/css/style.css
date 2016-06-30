@@ -1,0 +1,49 @@
+.container {
+	width: 80%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.container ul li {
+	list-style: none;
+	float: left;
+	font: 10px/1.5 Verdana, Helvetica, Sens-serif;
+	width: 16%;
+	margin: 2% 2% 40px 2%
+}
+
+.container ul li a{
+ color: #5d5f5d;
+}
+
+.container ul li a img {
+	width: 100%
+}
+
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+	.container ul li {
+	width: 21%;
+	}
+}
+
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+	.container ul li {
+	width: 29.333333%;
+	}
+}
+
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+	.container ul li {
+	width: 46%;
+	}
+}
+
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	.container ul li {
+	width: 96%;
+	}
+}

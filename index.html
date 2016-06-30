@@ -1,0 +1,71 @@
+
+<html>
+    <head>
+        <title>Welcome, Senpai!</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+        <style>
+        #anim_text {
+            position: absolute;
+            margin:200px 30px;
+            font-size: 1000%;
+            font-family: 'Montserrat', sans-serif;
+            color: #222323;
+        }
+
+        .left {
+             margin: 20px 0 20px 70px;
+            float: left;
+            height: 90%;
+        }
+
+        .right {
+            margin: 20px 70px 20px 0;
+            float: right;
+            height: 90%;
+        }
+
+        #start-anim {
+            margin-right:30px;
+        }
+
+        #anim_text {
+            width:90%;
+            overflow:visible;
+            text-align:center;
+        }
+
+        #anim_text span {
+            position: relative;
+            display:inline-block;
+            -webkit-font-smoothing:antialiased;
+        }
+
+        </style>
+    </head>
+    <!--HIDEN LINK http://romaniukvadim.github.io/hiden/ HIDEN LINK-->
+<body>
+
+        <center>
+                 <img class="left" src="left.jpg" />
+                 <img class="right" src="right.jpg" />
+                   <a href="/start/"> <div class="name" id="anim_text">Start</div> </a>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script type="text/javascript">
+        var $animText = $("#anim_text");
+
+        $animText.html( $animText.html().replace(/./g, "<span>$&</span>").replace(/\s/g, "&nbsp;"));
+        //TweenMax.staggerFromTo( $animText.find("span"), 0.1, {autoAlpha:0}, {autoAlpha:1}, 0.1 );
+        $animText.find("span").each(function(){
+                                TweenMax.fromTo(this, 2.5, {autoAlpha:0, rotation:randomNum(-360, 360), rotationX:randomNum(-360, 360), rotationY:randomNum(-360, 360), rotationZ:randomNum(-360, 360), scale:0}, {autoAlpha:1, rotation:0, rotationX:0, rotationY:0, rotationZ:0, scale:1});                   
+                            });     
+                //helper random function
+        function randomNum (min, max) {
+            return Math.random() * (max - min) + min;
+        }       
+
+    </script>
+    </body>
+</html>
