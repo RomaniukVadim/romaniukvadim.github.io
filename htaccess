@@ -1,0 +1,41 @@
+Database: bible_history
+Table: administrators
+[1 entry]
++----------+----------------+----------------+-----------------+------------------+
+| admin_id | admin_username | admin_password | admin_last_name | admin_first_name |
++----------+----------------+----------------+-----------------+------------------+
+| 1        | jc             | Mos3s          | NULL            | NULL             |
++----------+----------------+----------------+-----------------+------------------+
+
+
+bible-history.com
+
+
+
+----------------------------------------------------
+
+http://obmencity.ru/uploads/userfiles/images/404.php
+pass: mobius
+
+$configure['db_name']='sqladmin';           // Логин к БД
+$configure['db_pass']='YtNjgshmRjgsnf2015'; // 'YtPf,eleVfnmHjlye.1945';     // Пароль к БД
+
+admin: Retvizor139
+
+
+------------------------------------------------------
+
+
+Database: i2t2beta
+Table: admin
+[1 entry]
++----+-------+-------------------+--------------+------------+
+| id | name  | email             | password     | papalemail |
++----+-------+-------------------+--------------+------------+
+| 1  | admin | rajkumar@i2t2.com | iktigerstyle | RajKumar G |
++----+-------+-------------------+--------------+------------+
+
+http://www.i2t2.com
+
+
+------------------------------------
